@@ -147,7 +147,7 @@ a{
 }
 .blink-trending .blink{
   font-size: 11px !important;
-  padding: 8px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
   border-radius: 5px;
   background-color: yellow !important;
 }
@@ -927,6 +927,26 @@ a{
     width: 100px !important;
     height: 60px;
   }
+  .header-course-dropdown{
+    width: 300px;
+    left: -200px !important;
+  }
+  .header-course-dropdown > a{
+    width: 280px;
+  }
+  .dropdownss{
+    width: 260px !important;
+  }
+  .header-inner-drop{
+    padding-right: 5px !important;
+    width: 220px !important;
+  }
+  .header-inner-left{
+    margin-right: 18px !important;
+  }
+  .header-inner-right h5{
+    font-size: 16px !important;
+  }
 }
 /* footer responsive */
 @media only screen and (max-width:800px){
@@ -953,7 +973,7 @@ a{
   }
 
   .header-inner-right h5{
-    font-size: 18px !important;
+    font-size: 18px;
   }
   .header-inner-left{
     margin-right:10px ;
