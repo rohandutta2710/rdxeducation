@@ -33,14 +33,14 @@ a{
   /* border:2px solid black; */
 }
 .header-left{
-  width: 45%;
+  width: 38%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .header-right{
-  width:55%;
+  width:62%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -217,9 +217,10 @@ a{
 .header  p{
     cursor: pointer;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0px 20px 0px 20px;
     margin-bottom: 0px;
+    /* font-family: "calibri"; */
 }
 .header-right  p:hover{
   color: #312e94;
@@ -889,17 +890,17 @@ a{
     width: 140px;
     height: 77px;
     position: relative;
-    right: 8%;
+    right: 7.5%;
     top:5px
   }
 }
 
 @media only screen and (max-width:400px) {
   .header-left .btn{
-    left: 0px;
+    left: 3px;
   }
   .header-course1{
-    right: 0px;
+    right: 3px;
   }
   .header{
     width: 100%;
