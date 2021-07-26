@@ -97,22 +97,22 @@ class Slider extends React.Component{
     render(){
         return(
             <>
-            {/* <Carousel>
-                    <Carousel.Item interval={1000}>
+            <Carousel>
+                    <Carousel.Item interval={3000}>
                         <img className="d-block w-100" src={img[0]} alt="Loading"/>
                     </Carousel.Item>
-                    <Carousel.Item interval={500}>
+                    <Carousel.Item interval={3000}>
                         <img className="d-block w-100" src={img[1]} alt="Loading"/>
                     </Carousel.Item>
-                    <Carousel.Item interval={500}>
+                    <Carousel.Item interval={2000}>
                         <img className="d-block w-100" src={img[2]} alt="Loading"/>
                     </Carousel.Item>
-                    <Carousel.Item interval={500}>
+                    <Carousel.Item interval={3000}>
                         <img className="d-block w-100" src={img[3]} alt="Loading"/>
                     </Carousel.Item>
-            </Carousel> */}
+            </Carousel>
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        {/* <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -141,7 +141,7 @@ class Slider extends React.Component{
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div> */}
             {/* industry association */}
             <IndustryAssociation/>
 
