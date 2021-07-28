@@ -83,7 +83,6 @@ class ServicesProp extends React.Component{
           return(
               <>
               <Tilt className="tiltcss" options={{scale:4,max:200,speed:4000,glare:true}}>
-                {/* <div className="our-services"> */}
                 <div className="title">
                     <h1>{this.props.services.title}</h1>
                 </div>
@@ -91,7 +90,6 @@ class ServicesProp extends React.Component{
                     <p>{this.props.services.para}</p>
                     </div>
                     <a href={this.props.services.hrefs}>Know More   &gt;</a>
-                {/* </div> */}
                 </Tilt>
               </>
           );

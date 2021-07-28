@@ -1,5 +1,4 @@
-import React,{useState} from "react";
-import Button from "react-bootstrap/Button";
+import React from "react";
 import ModalForm from "./ModalPopup.jsx";
 class MenuHeader extends React.Component{
   render(){
@@ -13,7 +12,7 @@ class MenuHeader extends React.Component{
             </div>
             <div class="offcanvas-body">
                 <ul className="menu-list">
-                  <li><a href="/about" target="_blank">About Brillica</a></li>
+                  <li><a href="/about" target="_blank">About Us</a></li>
                   <li><a href="/contact" target="_blank">Contact us</a></li>
                   <li><a href="/services" target="_blank">Our Services</a></li>
                   <li><a href="https://p.paytm.me/xCTH/18d23e1f" target="_blank">Pay Online</a></li>

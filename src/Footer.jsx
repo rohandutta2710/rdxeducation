@@ -1,5 +1,5 @@
 import React from "react";
-import Brillica_logo from "./images/BRILLICA_LOGO.png";
+import rdxeducation_logo from "./images/rdxeducation_logo.jpg";
 import { FooterProp} from "./Prop";
 const iconarr=[{icon:<i class="fab fa-facebook-square"></i>,hrefs:"https://www.facebook.com/rohandutta2710/"},{icon:<i class="fab fa-linkedin"></i>,hrefs:"#"},{icon:<i class="fab fa-twitter"></i>,hrefs:"https://twitter.com/RohanDu16382942?s=09"},{icon:<i class="fab fa-instagram"></i>,hrefs:"https://www.instagram.com/rohandutta2000/"}]
 class Footer extends React.Component{
@@ -21,7 +21,7 @@ class Footer extends React.Component{
                         </div>
                  </div>
                  <div className="footer-right">
-                 <a href="/"><img src={Brillica_logo} className="header-brillica-logo"/></a>
+                 <a href="/"><img src={rdxeducation_logo} className="header-rdxeducation-logo"/></a>
                  <div className="footericon">
                      {iconarr.map((value)=>{return <FooterProp footer={value}/>})}
                  </div>

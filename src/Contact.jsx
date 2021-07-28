@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header.jsx";
+import { Helmet } from "react-helmet";
 import Footer from "./Footer.jsx";
 import {Contactprop} from "./Prop.jsx";
 import PageLoader from "./LoaderPage.jsx";
@@ -23,6 +24,9 @@ class Contact extends React.Component{
     render(){
         return(
             <>
+            <Helmet>
+                <title>RDX Education | Contact</title>
+            </Helmet>
             {this.state.loading?<PageLoader></PageLoader>:<>
                 <Header/>
                 <div className="contact">

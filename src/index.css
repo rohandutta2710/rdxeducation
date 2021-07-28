@@ -21,7 +21,8 @@ a{
 }
 
 .header-main{
-  margin-bottom: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,10 +50,11 @@ a{
   color: black;
   text-decoration: none;
 }
-.header-brillica-logo{
-  width: 200px;
-  height: 100px;
-
+.header-rdxeducation-logo{
+  width: 190px;
+  height: 90px;
+  border: 2px solid #33308b;
+  border-radius: 5px;
 }
 .header-course1{
   cursor: pointer;
@@ -407,9 +409,10 @@ a{
   margin-top: 40px;
   padding-right: 150px;
   width: 380px;
+  border: none !important;
 }
 .footericon{
-  padding-right: 135px;
+  padding-right: 144px;
   font-size: 20px;
 }
 .footericon a{
@@ -886,11 +889,11 @@ a{
  
 }
 @media only screen and (max-width:500px){
-  .header-brillica-logo{
+  .header-rdxeducation-logo{
     width: 140px;
     height: 77px;
     position: relative;
-    right: 7.5%;
+    right: 6.35%;
     top:5px
   }
 }
@@ -905,8 +908,9 @@ a{
   .header{
     width: 100%;
   }
-  .header-brillica-logo{
+  .header-rdxeducation-logo{
     height: 70px;
+    right:7.1%;
   }
   .header-left button{
     margin-right: 0px;
@@ -923,9 +927,10 @@ a{
 }
 
 @media only screen and (max-width:350px) {
-  .header-brillica-logo{
+  .header-rdxeducation-logo{
     width: 100px !important;
     height: 60px;
+    right: 10%;
   }
   .header-course-dropdown{
     width: 300px;

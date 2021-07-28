@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Brillica_logo from "./images/BRILLICA_LOGO.png";
+import rdxeducation_logo from "./images/rdxeducation_logo.jpg";
 import HeaderProp from "./Prop.jsx";
 import ModalForm from "./ModalPopup.jsx";
 import MenuHeader from "./MenuHeader";
@@ -68,7 +68,7 @@ class Header extends React.Component{
                 <div className="header">
                 <div className="header-left">
                     <MenuHeader/>
-                    <a href="/"><img src={Brillica_logo} className="header-brillica-logo"/></a>
+                    <a href="/"><img src={rdxeducation_logo} className="header-rdxeducation-logo"/></a>
                     <button className="header-course1">COURSES<div className="course-i"><i class="fas fa-angle-down"></i></div>
                     <div className="header-course-dropdown">
                             <a href="/services" target="_blank">Our Services</a>
@@ -114,7 +114,7 @@ class Header extends React.Component{
                     </button>
                     </div>
                     <div className="header-right">
-                        <a href="/about" target="_blank"><p>About Brillica</p></a>
+                        <a href="/about" target="_blank"><p>About Us</p></a>
                         <a href="/contact" target="_blank"><p>Contact Us</p></a>
                         <a href="/services" target="_blank"><p>Our Services</p></a>
                         <button className="header-button header-more">MORE  <div className="course-i"><i class="fas fa-angle-down"></i></div>
