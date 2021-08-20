@@ -5,10 +5,10 @@ class PageLoader extends React.Component{
     render(){
         return(
             <>
-              <div class="bodies">
+              <div className="bodies">
                 <h1>Loading<span></span><span></span><span></span></h1>
-                    <div class="outer-ring">
-                        <div class="inner-ring">       
+                    <div className="outer-ring">
+                        <div className="inner-ring">       
                         </div>
                     </div>
                 </div>

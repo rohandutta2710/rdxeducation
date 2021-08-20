@@ -138,7 +138,7 @@ class IndustryAssociation extends React.Component{
                     <div className="industry-marquee">
                         <div className="industry-img">
                             <marquee Scrollamount="5">
-                                {industry.map((value)=>{return <Sliderprop industryimages={value}/>})}
+                                {industry.map((value,index)=>{return <Sliderprop industryimages={value} index={index}/>})}
                             </marquee>
                         </div>
                     </div>

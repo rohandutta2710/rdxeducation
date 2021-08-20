@@ -5,7 +5,7 @@ class HeaderProp extends React.Component{
     render(){
         return(
         <>
-            <a href={this.props.headerdata.hrefs}>
+            <a to={this.props.headerdata.hrefs}>
             <div className="header-inner-drop">
                     <div className="header-inner-left">
                         <img src={this.props.headerdata.imgs} alt="Loading"/>
@@ -26,7 +26,7 @@ class HeaderProp extends React.Component{
 class Sliderprop extends React.Component{
     render(){
         return(
-            <img src={this.props.industryimages} alt="Loading"/>
+            <img src={this.props.industryimages} alt="Loading" key={this.props.index}/>
         );
     }
 }
@@ -35,7 +35,7 @@ class CourseSlider extends React.Component{
     render(){
         return(
             <>
-            <a href={this.props.courseimages.hrefs}>
+            <a to={this.props.courseimages.hrefs}>
                 <div className="course-block">
                     <div className="course-slider">
                         <img src={this.props.courseimages.img} alt="Loading"/>
@@ -51,7 +51,7 @@ class ReviewProp extends React.Component{
     render(){
          return(
              <>
-             <Tilt className="tilt-review">
+             <Tilt className="tilt-review" key={this.props.index}>
                 <div className="reviewer-name">
                     <img src={this.props.review.img} alt="Loading"/>
                     <p className="name">{this.props.review.name}</p>
@@ -72,7 +72,7 @@ class FooterProp extends React.Component{
     render(){
         return(
             <>
-            <a href={this.props.footer.hrefs} target="_blank">{this.props.footer.icon}</a>
+            <a key={this.props.index} href={this.props.footer.hrefs} target="_blank">{this.props.footer.icon}</a>
             </>
         );
     }
@@ -89,7 +89,7 @@ class ServicesProp extends React.Component{
                 <div className="para">
                     <p>{this.props.services.para}</p>
                     </div>
-                    <a href={this.props.services.hrefs}>Know More   &gt;</a>
+                    <a to={this.props.services.hrefs}>Know More   &gt;</a>
                 </Tilt>
               </>
           );
@@ -104,7 +104,7 @@ class Contactprop extends React.Component{
                     <h1>{this.props.contact.stateName}</h1>
                     <p>{this.props.contact.address}</p>
                     <p className="loc-number"><i class="fas fa-phone-square-alt"></i> {this.props.contact.number}</p>
-                    <a href={this.props.contact.hrefs}><i class="fas fa-map-marker"></i> View Map</a>
+                    <a to={this.props.contact.hrefs}><i class="fas fa-map-marker"></i> View Map</a>
                 </div>
             </>
         );

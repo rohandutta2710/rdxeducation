@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 import rdxeducation_logo from "./images/rdxeducation_logo.jpg";
 import HeaderProp from "./Prop.jsx";
 import ModalForm from "./ModalPopup.jsx";
@@ -58,9 +59,6 @@ const specialised=[{name:"Certified Blockchain Developer-Ethereum",hrefs:"#",img
 
 
 class Header extends React.Component{
-    constructor(props){
-        super(props);
-    }
     render(){
         return(
             <>
@@ -68,59 +66,59 @@ class Header extends React.Component{
                 <div className="header">
                 <div className="header-left">
                     <MenuHeader/>
-                    <a href="/"><img src={rdxeducation_logo} className="header-rdxeducation-logo"/></a>
-                    <button className="header-course1">COURSES<div className="course-i"><i class="fas fa-angle-down"></i></div>
+                    <Link to="/"><img src={rdxeducation_logo} className="header-rdxeducation-logo" alt="Loading"/></Link>
+                    <button className="header-course1">COURSES<div className="course-i"><i className="fas fa-angle-down"></i></div>
                     <div className="header-course-dropdown">
-                            <a href="/services" target="_blank">Our Services</a>
+                            <Link to="/services">Our Services</Link>
                             
-                            <a href="#" className="data-science">Data Science Training Program <i class="fas fa-caret-down"></i>
+                            <a href="#" className="data-science">Data Science Training Program <i className="fas fa-caret-down"></i>
                                 <div className="dropdownss">
                                     {datascience.map((value)=>{return <HeaderProp headerdata={value}/>})}
                                 </div>
                             </a>
                             
-                            <a href="#" className="data-analytics">Data Analytics Training Program <i class="fas fa-caret-down"></i>
+                            <a href="#" className="data-analytics">Data Analytics Training Program <i className="fas fa-caret-down"></i>
                             <div className="dropdownss">
                                     {data_analytics.map((value)=>{return <HeaderProp headerdata={value}/>})}
                                 </div>
                             </a>
                             
-                            <a href="#" className="cloud-computing">Cloud Computing <i class="fas fa-caret-down"></i>
+                            <a href="#" className="cloud-computing">Cloud Computing <i className="fas fa-caret-down"></i>
                             <div className="dropdownss">
                                      {cloud_computing.map((value)=>{return <HeaderProp headerdata={value}/>})}
                                 </div>
 
                             </a>
                             
-                            <a href="#" className="agile">Agile and Scrum <i class="fas fa-caret-down"></i>
+                            <a href="#" className="agile">Agile and Scrum <i className="fas fa-caret-down"></i>
                             <div className="dropdownss">
                                     {agile.map((value)=>{return <HeaderProp headerdata={value}/>})}
                             </div>
                             </a>
                             
-                            <a href="#" className="development">Development <i class="fas fa-caret-down"></i>
+                            <a href="#" className="development">Development <i className="fas fa-caret-down"></i>
                             <div className="dropdownss">
                                      {development.map((value)=>{return <HeaderProp headerdata={value}/>})}
                                 </div>
                             </a>
-                            <a href="#" className="specialised">Specialised Training <i class="fas fa-caret-down"></i>
+                            <a href="#" className="specialised">Specialised Training <i className="fas fa-caret-down"></i>
                             <div className="dropdownss">
                                     {specialised.map((value)=>{return <HeaderProp headerdata={value}/>})}
                                 </div>
                             </a>
-                            <a href="#">Cyber Security <i class="fas fa-caret-down"></i></a>
+                            <a href="#">Cyber Security <i className="fas fa-caret-down"></i></a>
                     
                     </div>
                     </button>
                     </div>
                     <div className="header-right">
-                        <a href="/about" target="_blank"><p>About Us</p></a>
-                        <a href="/contact" target="_blank"><p>Contact Us</p></a>
-                        <a href="/services" target="_blank"><p>Our Services</p></a>
-                        <button className="header-button header-more">MORE  <div className="course-i"><i class="fas fa-angle-down"></i></div>
+                        <Link to="/about"><p>About Us</p></Link>
+                        <Link to="/contact"><p>Contact Us</p></Link>
+                        <Link to="/services"><p>Our Services</p></Link>
+                        <button className="header-button header-more">MORE  <div className="course-i"><i className="fas fa-angle-down"></i></div>
                         <div className="header-more-list">
                             <a href="https://p.paytm.me/xCTH/18d23e1f" target="_blank">Pay Online</a>
-                            <a href="#">Blog</a>
+                            <Link to="#">Blog</Link>
                         </div>
                         </button> 
                         <ModalForm></ModalForm>

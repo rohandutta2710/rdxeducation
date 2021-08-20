@@ -34,7 +34,7 @@ class Review extends React.Component{
              <h1 className="learners">What our learners have to say about us!</h1>
               <div className="review-block">
                 <div className="reviewflex">
-                    {reviewarr1.map((value)=>{return <ReviewProp review={value}/>})}
+                    {reviewarr1.map((value,index)=>{return <ReviewProp review={value} index={index}/>})}
                     </div>
                 </div>
                 </div>
@@ -43,7 +43,7 @@ class Review extends React.Component{
              <div className="review">
              <div className="review-block">
                 <div className="reviewflex">
-                    {reviewarr2.map((value)=>{return <ReviewProp review={value}/>})}
+                    {reviewarr2.map((value,index)=>{return <ReviewProp review={value} index={index}/>})}
                     </div>
                 </div>
                 </div>
@@ -52,7 +52,7 @@ class Review extends React.Component{
              <div className="review">
               <div className="review-block">
                 <div className="reviewflex">
-                    {reviewarr3.map((value)=>{return <ReviewProp review={value}/>})}
+                    {reviewarr3.map((value,index)=>{return <ReviewProp review={value} index={index}/>})}
                     </div>
                 </div>
                 </div>
